@@ -7,14 +7,6 @@ Created on Thu Aug  6 00:21:30 2020
 """
 
 
-#Needs:
-#grid.nodes as list containing all nodes
-#grid.size as number of nodes. or just len(grid.nodes)
-#node.adj as list of what is adjacent to 
-#node.dist as list of distances correlating to adjacency list
-
-# Adjascency List representation in Python
-
 from random import randint
 from string import ascii_uppercase as caps
 
