@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Thu Aug  6 00:21:30 2020
+
 @author: PetersMacBook
 """
 
@@ -76,6 +77,18 @@ class Grid:
     def dist(self, node):
         """ return all distances from an inputted node """
         return self.dict[node]['dist']
+   
+    
+    
+if __name__ == "__main__":    
+    g = Grid(caps, 5)
+    g.edge('A', 'B', 3)
+    g.edge('A', 'C', 7)
+    g.edge('A', 'E', 2)
+    g.edge('B', 'C', 5)
+    g.edge('B', 'D', 9)
+    g.edge('B', 'E', 8)
+    print(g)
 
 def example1(): 
     g = Grid(caps, 5)
@@ -107,13 +120,5 @@ def example2():
     g.edge('3','4',9)
     g.edge('5','4',10)
     return g
-  
-if __name__ == "__main__":    
-    g = Grid(caps, 5)
-    g.edge('A', 'B', 3)
-    g.edge('A', 'C', 7)
-    g.edge('A', 'E', 2)
-    g.edge('B', 'C', 5)
-    g.edge('B', 'D', 9)
-    g.edge('B', 'E', 8)
-    print(g)
+
+
