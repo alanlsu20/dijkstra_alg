@@ -108,6 +108,12 @@ def example2():
     g.edge('5','4',10)
     return g
   
-if __name__ == "__main__":  
-    g=example()
+if __name__ == "__main__":    
+    g = Grid(caps, 5)
+    g.edge('A', 'B', 3)
+    g.edge('A', 'C', 7)
+    g.edge('A', 'E', 2)
+    g.edge('B', 'C', 5)
+    g.edge('B', 'D', 9)
+    g.edge('B', 'E', 8)
     print(g)
